@@ -1,0 +1,8 @@
+
+
+<h1>Rooms</h1>
+
+<% @rooms.each do |r| %>
+	<h2><%= r.topic %></h2>
+	<%= r.created_at.strftime("Created on %A at %l:%M%P") %>
+<% end %>
