@@ -1,3 +1,64 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	// background-image: url("http://abali.ru/wp-content/uploads/2012/10/subtle-pattern-7.jpg");
+}
+
+hr {
+    border: none;
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
+}
+
+#allRooms{
+	width: 95%;
+    font-family: 'Playfair Display', serif;
+    overflow: normal;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.oneRoom{
+	width: 275px;
+	height: 95px;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 15px;
+	border: solid black 1px;
+	border-radius: 15px;
+	vertical-align:top;
+    display:inline-block;
+    overflow: hidden;
+}
+
+.mainHeader{
+	font-size: 40px;
+	padding: 15px;
+	margin-left: 15px;
+}
+
+.topic{
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	display: -webkit-box;
+  	-webkit-line-clamp: 1;
+  	-webkit-box-orient: vertical; 
+}
+
+.postDate{
+	font-size: 12px;
+}
+
+.headline{
+	margin-top: 10px;
+	// text-align: left;
+	font-size: 14px;
+	overflow: hidden;
+	display: -webkit-box;
+  	-webkit-line-clamp: 2;
+  	-webkit-box-orient: vertical; 
+}

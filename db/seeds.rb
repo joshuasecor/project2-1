@@ -6,4 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Room.create(topic: 'Games', description: )
+# Room.create(topic: 'TIE fighter', headline: 'Lego introduces 1,685-piece model based on \'Star Wars\' Imperial starfighter')
+
+# Room.create(topic: 'Vint Cerf', headline: 'Google executive urges users to print files and photos, warns of a \'digital dark age\'')
+
+# Room.create(topic: 'NSYNC', headline: '1990s pop band hints at potential reunion for \'Saturday Night Live\' 40th anniversary special')

@@ -1,8 +1,12 @@
+<div id='allRooms'>
+	<div class='mainHeader'>Rooms</div>
+	<% @rooms.each do |r| %>
+		<div class='oneRoom' >
+			<div class='topic'><%= link_to r.topic, r %></div>
+			<div class='postDate'><%= r.created_at.strftime("Created on %A at %l:%M%P") %></div>
+			<hr>
+			<p class='headline'><%= r.headline %></p>
+		</div>
+	<% end %>
+</div>
 
-
-<h1>Rooms</h1>
-
-<% @rooms.each do |r| %>
-	<h2><%= r.topic %></h2>
-	<%= r.created_at.strftime("Created on %A at %l:%M%P") %>
-<% end %>
