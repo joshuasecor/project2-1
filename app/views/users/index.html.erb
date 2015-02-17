@@ -6,6 +6,6 @@
 	<hr>
 	<div><%= link_to u.username, u %></div><br>
 	<div><%= u.first_name %> <%= u.last_name %></div><br>
-	<div><%= link_to(image_tag(u.avatar.url(:thumb)), u) %></div>
+	<div class='roomImage'><%= link_to(image_tag(u.avatar.url(:thumb)), u) %></div>
 <% end %>
 

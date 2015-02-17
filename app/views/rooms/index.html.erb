@@ -9,9 +9,11 @@
 			<div class='topic'><%= link_to r.topic, r %></div>
 			<div class='postDate'><%= r.created_at.strftime("Created on %A at %l:%M%P") %></div>
 			<br>
-			<div><%= link_to(image_tag(r.avatar.url(:medium)), r) %></div>
+			<div class='roomImageContainer'>
+				<img><%= link_to(image_tag(r.avatar.url(:medium)), r) %></img>
+			</div>
 			<hr>
-			<p class='headline'><%= r.headline %></p>
+			<div class='headline'><%= r.headline %></div>
 		</div>
 	<% end %>
 </div>
