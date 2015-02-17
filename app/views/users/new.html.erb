@@ -1,30 +1,17 @@
-<div class="body"></div>
-<div class="grad"></div>
-<div class="header">
-	<div>Klatch<span>Chat</span></div>
+
+<div>Klatch</div>
 </div>
 <br>
-<div class="login">
-<%= form_for @user do |f| %>
-	<div class="firstName">First Name: <%= f.text_field :first_name %></div><br />
-	<div class="lastName">Last Name: <%= f.text_field :last_name %></div><br />
-	Email: <%= f.text_field :email %><br />
-	Password: <%= f.password_field :password %><br />
-	Confirm Password: <%= f.password_field :password_confirmation %><br />
-	<br /><br />
-	<%= f.submit %>
-<% end %>
-</div>
-
-<!-- <div class="body"></div>
-<div class="grad"></div>
-<div class="header">
-	<div>Klatch<span>Chat</span></div>
-</div>
-<br> -->
-<div class="login">
-	<input type="text" placeholder="username" name="user"><br>
-	<input type="text" placeholder="email" name="user"><br>
-	<input type="password" placeholder="password" name="password"><br>
-	<input type="button" value="signup">
+<div>
+	<%= form_for @user do |f| %>
+		First Name: <%= f.text_field :first_name %><br>
+		Last Name: <%= f.text_field :last_name %><br>
+		Username: <%= f.text_field :username %><br>
+		Email: <%= f.text_field :email %><br>
+		Password: <%= f.password_field :password %><br>
+		Confirm Password: <%= f.password_field :password_confirmation %><br><br>
+		Add Avatar: <%= f.file_field :avatar %>
+		<br><br>
+		<%= f.submit %>
+	<% end %>
 </div>

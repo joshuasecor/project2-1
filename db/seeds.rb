@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Room.create(topic: 'Jack White', headline: 'Musician addresses leaked tour contract details regarding specific guacamole demands')
+Room.create(topic: 'Sufjan Stevens', headline: 'Musician releases single, \'No Shade in the Shadow of the Cross,\' from upcoming album')
 
-# Room.create(topic: 'Chelyabinsk meteor', headline: 'Details of asteroid that exploded over Russia remain unclear on 2-year anniversary')
+Room.create(topic: 'Kingsman', headline: 'The Secret Service: Film projected to earn more than $35 million from opening weekend')
 
-# Room.create(topic: 'Lakes of Titan', headline: 'NASA reveals concept of submarine that could explore methane seas on Saturn moon')
+Room.create(topic: 'Libya', headline: 'Egypt bombs Islamic State targets in country following video of executed Egyptians, reports say')

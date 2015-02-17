@@ -1,20 +1,17 @@
 
 <div id='allRooms'>
 	<div class='mainHeader'>Rooms</div>
+	<div><%= link_to 'Create a Room', new_room_path %></div><br>
+	<%= link_to 'View All Users', users_path %><br>
+	<br>
 	<% @rooms.each do |r| %>
 		<div class='oneRoom' >
 			<div class='topic'><%= link_to r.topic, r %></div>
 			<div class='postDate'><%= r.created_at.strftime("Created on %A at %l:%M%P") %></div>
+			<br>
+			<div><%= link_to(image_tag(r.avatar.url(:medium)), r) %></div>
 			<hr>
 			<p class='headline'><%= r.headline %></p>
 		</div>
 	<% end %>
 </div>
-
-<br><br>
-
-<div id="map-container">
-	<%= render 'layouts/maps' %>
-</div>
-
-<br><br>
